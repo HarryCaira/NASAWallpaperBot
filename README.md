@@ -1,4 +1,4 @@
-## NASA Wallpaper Bot (For Mac/Linux)
+## NASA Wallpaper Bot (For Mac)
 
 Updates desktop wallpaper with image from the [NASA APOD API](https://api.nasa.gov/). Saves image locally to a given destination folder.
 
