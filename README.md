@@ -16,7 +16,7 @@ Updates desktop wallpaper with image from the [NASA APOD API](https://api.nasa.g
 1. `sudo crontab -e`
 2. set PATH at the top level, pointing to bin and your poetry installation e.g. `PATH=/opt/homebrew/bin:/bin:/usr/bin:`
 3. add crontab line:
-    e.g. `* 12 * * * cd {local_path_to_this_dir} && sh wallpaper_bot.sh {path_to_destination_folder}` Runs everyday at 12pm. [Crontab guru](https://crontab.guru/) for reference.
+    e.g. `0 12 * * * cd {local_path_to_this_dir} && sh wallpaper_bot.sh {path_to_destination_folder}` Runs everyday at 12pm. [Crontab guru](https://crontab.guru/) for reference.
 
 **Note:** You will have to give the shell program that is running your jobs accessibility access in the security and privacy settings.   
 
