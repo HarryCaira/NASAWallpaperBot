@@ -1,25 +1,14 @@
 ## NASA Wallpaper Bot (For Mac)
 
-Updates desktop wallpaper with image from the [NASA APOD API](https://api.nasa.gov/). Saves image locally to a destination folder.
+Updates your desktop wallpaper with the latest image from the [NASA Astronomy Picture of the Day API](https://api.nasa.gov/). It stores the image locally.
 
 ### Requirements
 
-1. Python 3.10
-2. Poetry
-3. .env with NASA_API_KEY={my_nasa_api_key} set
+- Python 3.9
+- Poetry
+- A .env file with your NASA api key in
+  - Run `echo NASA_API_KEY={my_nasa_api_key} > .env`
 
-### Manual Usage
+### Usage
 
-1. `export $(cat .env | xargs)`
-2. `poetry install`
-3. `poetry run wallpaper_bot {path_to_destination_folder}`
-
-### Bash Alias
-
-<!-- ### Running as a cronjob
-1. `sudo crontab -e`
-2. set PATH at the top level, pointing to bin and your poetry installation e.g. `PATH=/opt/homebrew/bin:/bin:/usr/bin:`
-3. add crontab line:
-    e.g. `0 12 * * * cd {local_path_to_this_dir} && sh wallpaper_bot.sh {path_to_destination_folder}` Runs everyday at 12pm. [Crontab guru](https://crontab.guru/) for reference.
-
-**Note:** You will have to give the shell program that is running your jobs accessibility access in the security and privacy settings.    -->
+- Run the program with sh wallpaper_bot.sh {path to wallpaper folder}

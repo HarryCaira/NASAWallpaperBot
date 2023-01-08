@@ -1,4 +1,4 @@
 #!/bin/sh
 export $(cat .env | xargs)
 poetry install
-poetry run wallpaper_bot $1
+poetry run apod_wallpaper $1
